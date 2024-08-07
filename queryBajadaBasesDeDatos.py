@@ -8,7 +8,7 @@ import os
 from ManejadorError import mailError
 
 # clase:
-def queryDATOS():
+def queryBajadaBasesDeDatos():
   # Defino variables con datos guardados en windows
 	usuario = os.environ.get('Usuario')
 	contrasenia = os.environ.get('PassNew')
@@ -33,6 +33,6 @@ def queryDATOS():
 
 
 try:
-	queryDATOS()
+	queryBajadaBasesDeDatos()
 except:
 	mailError("Se genero un error en la bajada de Accesos")
